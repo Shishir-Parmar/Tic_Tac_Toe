@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <link type="text/css" rel="stylesheet" href="tic.css">
+   
+</head>
+<body onload="startGame()">
+
+     <h1>Tic - Tak - Toe!</h1>
+
+        <h2 id="message" class="text1" align="center"  style="color:darkblue; margin-bottom: 15px; "></h2>
+
+        <table align="center" class="shift">
+    
+            <tr>
+                <td id="col1" class="box"  onclick="playerAction(this)"></td>
+                <td id="col2" class="box"   onclick="playerAction(this)"></td>
+                <td id="col3" class="box"  onclick="playerAction(this)"></td>
+            </tr>
+
+            <tr>
+                <td id="col4" class="box"   onclick="playerAction(this)"></td>
+                <td id="col5" class="box"   onclick="playerAction(this)"></td>
+                <td id="col6" class="box" onclick="playerAction(this)"></td>
+            </tr>
+
+            <tr>
+                <td id="col7" class="box"  onclick="playerAction(this)"></td>
+                <td id="col8" class="box"  onclick="playerAction(this)"></td>
+                <td id="col9" class="box"  onclick="playerAction(this)"></td>
+            </tr>
+        </table>
+        <div class="btn">
+        <button type="button"  onclick="startGame()">Restart</button>
+        
+     </div>
+    
+    <script type="text/javascript" src="tic_tak.js"></script>
+
+    
+</body>
+</html>
